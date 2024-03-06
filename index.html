@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body >
-<header>
-    <nav></nav>
-</header>
-<main>
-    <section>hero image</section>
-    <section>
-        <aside>recipe list</aside>
-        <div>recipe images</div>
-    </section>
-</main>
-<footer></footer>
-</body>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>hero image</section>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <aside>
+          recipe list
+          <div class="bg-lime-300 shrink w-64 md:shrink-0">
+            <h2>MENU / RECIPES.</h2>
+            <h3>BRUNCH</h3>
+            <ul>
+              <li>Frittata</li>
+              <li>French Toast Casserole</li>
+              <li>Egg Muffins</li>
+              <li>Burrito</li>
+              <li>Kedgeree</li>
+              <li>Green Shakshuka</li>
+            </ul>
+            <h3>LUNCH</h3>
+            <ul>
+              <li>Coconut Lime Shrimp</li>
+              <li>Copycat Panera Frontega, Chicken Panini</li>
+              <li>Copycat Wendy's Chili</li>
+              <li>Chinese Chicken Mandarin Salad</li>
+              <li>Crunchwrap supreme</li>
+              <li>Panera Thai Chicken Salad</li>
+            </ul>
+          </div>
+        </aside>
+        <div>
+          recipe images
+          <div class="flex flex-wrap grow w-80 md:grow-0">
+            <img
+              src="https://www.loveandlemons.com/wp-content/uploads/2019/04/frittata.jpg"
+              alt="frittata"
+              width="300"
+              height="300"
+            />
+            <img
+              src="https://cdn.loveandlemons.com/wp-content/uploads/2022/12/french-toast-casserole-1.jpg"
+              alt="french-toast-casserole-1"
+              width="300"
+              height="300"
+            />
+            <img
+              src="https://cdn.loveandlemons.com/wp-content/uploads/2023/01/egg-muffins-1.jpg"
+              alt="egg-muffins-1"
+              width="300"
+              height="300"
+            />
+            <img
+              src="https://cdn.loveandlemons.com/wp-content/uploads/2019/05/breakfast-burritos-1-830x1024.jpg"
+              alt="Burrito"
+              width="300"
+              height="300"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
