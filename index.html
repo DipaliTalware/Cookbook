@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -51,11 +51,50 @@
         </div>
 </header>
 <main>
-    <section></section>
-    <section>
-        <aside></aside>
-        <div></div>
-    </section>
+    <section class="flex  md:flex-row flex-col ">
+          recipe list
+          <div class="flex flex-col grow relative bg-yellow-500 w-auto md:w-72 h-auto md:h-96 px-8 m-8  ">
+            <h2 class="font-bold flex align-middle justify-center pt-3">MENU / RECIPES</h2>
+            <ul class="list-inside list-disc m-2 space-y-4">
+              <li><a href="./recipe.html">Autumn Squash Soup</a></li>
+              <li><a href="./recipe.html">Butter Chicken</a></li>
+              <li><a href="./recipe.html">Chicken Katsu Curry</a></li>
+              <li><a href="./recipe.html">Copycat Panera Autumn Squash Soup</a></li>
+              <li><a href="./recipe.html">Kedgeree</a></li>
+            </ul>
+        </aside>
+        <div>
+          recipe images
+          <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-2 bg-stone-100 m-8">
+            
+            <img class="object-contain h-3/4 w-max"
+              src="https://niksharmacooks.com/wp-content/uploads/2022/11/ButterChickenDSC_5608-768x1152.jpg"
+              alt="butter-chicken"
+            />
+            <img class="object-contain h-3/4 w-max"
+              src="https://www.thelastfoodblog.com/wp-content/uploads/2021/05/tofu-katsu-curry-2.jpg"
+              alt="chicken-katsu-curry"
+            />
+            <img class="object-contain h-3/4 w-max"
+              src="https://cdn.loveandlemons.com/wp-content/uploads/2019/05/breakfast-burritos-1-830x1024.jpg"
+              alt="burritos"
+            />
+            <img class="object-contain h-3/4 w-max"
+              src="https://cdn.loveandlemons.com/wp-content/uploads/2017/01/shakshuka.jpg"
+              alt="shakshuka"
+            />
+            
+            <img class="object-contain h-3/4 w-max"
+              src="https://asimplepalate.com/wp-content/uploads/2016/10/copycat-panera-autumn-squash-soup-1-1365x2048.jpg"
+              alt="autumn-squash-soup"
+            />
+            <img class="object-contain h-3/4 w-max"
+              src="https://www.loveandlemons.com/wp-content/uploads/2019/04/frittata.jpg"
+              alt="frittata"
+            />
+          </div>
+        </div>
+      </section>
 </main>
 <footer>
     <div class="bg-green-200 justify-center text-center p-4 clear-both">
@@ -72,3 +111,4 @@
 </footer>
 </body>
 </html>
+
