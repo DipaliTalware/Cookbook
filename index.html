@@ -4,16 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <nav></nav>
-    </header>
-    <main>
-      <section>hero image</section>
-      <section class="flex  md:flex-row flex-col ">
-        <aside>
+</head>
+<body>
+<header>
+    <nav class="bg-green-200 shadow-lg">
+        <div class="py-3 px-0 max-w-7xl my-0 mx-auto flex items-center justify-between">
+            <div class="flex flex-row items-center justify-between flex-wrap">
+                    <img src="./image/logo.png" class="w-12 aspect-square object-cover object-center" alt="logo">
+                        <h2 class="pr-5 content-end ml-2.5 font-bold text-3xl hover:text-white">TastyRecipes</h2>
+                    <div class="mt-1.5 border-none">
+                        <input type="text" class="mt-2 border-none" placeholder="  Search recipes" name="search">
+                        <button class="py-0.4 px-2.5 bg-slate-200 border-none cursor-pointer hover:bg-slate-300">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+            </div>
+            <div class="font-semibold">
+                <div class="flex flex-row sm:flex-cols">
+                    <img
+            src="./img/design-assets/png/icons8-menu-50.png" style="display: none;"
+            alt="Hamburgermenu"
+            width="70px"/>
+                    <ul class="flex justify-between items-center w-full">
+                        <li class="text-center list-none no-underline justify-around">
+                            <a href="#" class="p-3 hover:text-white">Home</a>
+                        </li>
+                        <li class="text-center list-none justify-around">
+                            <a href="#" class="p-3 hover:text-white">Recipes</a>
+                        </li>
+                        <li class="text-center list-none justify-around">
+                            <a href="#" class="p-3 hover:text-white">About</a>
+                        </li>
+                        <li class="text-center list-none justify-around">
+                            <a href="#" class="p-3 hover:text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <div class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-40 text-center"
+        style="background-image: url('./image/new-cover.png'); height:65vh">
+            <span class="flex text-center justify-center font-bold text-3xl text-white">Tasty recipes now at your fingertips!</span>
+        </div>
+</header>
+<main>
+    <section class="flex  md:flex-row flex-col ">
           recipe list
           <div class="flex flex-col grow relative bg-yellow-500 w-auto md:w-72 h-auto md:h-96 px-8 m-8  ">
             <h2 class="font-bold flex align-middle justify-center pt-3">MENU / RECIPES</h2>
@@ -57,7 +95,20 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer></footer>
-  </body>
+</main>
+<footer>
+    <div class="bg-green-200 justify-center text-center p-4 clear-both">
+        <div class="flex items-center justify-center pb-2 py-4 flex-wrap">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook.png" alt="facebook"/>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram"/>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter"/>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/pinterest--v1.png" alt="pinterest"/>
+        </div>
+        <div class="font-semibold">
+            <p>&copy;2024 Created by TastyRecipes</p>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
+
