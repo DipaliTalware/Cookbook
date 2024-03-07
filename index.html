@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
->>>>>>> e56d8ba5d9e3e5bb73999d2d50b9e4dc850b66bc
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
@@ -18,57 +12,47 @@
     </header>
     <main>
       <section>hero image</section>
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section class="flex  md:flex-row flex-col ">
         <aside>
           recipe list
-          <div class="bg-lime-300 shrink w-64 md:shrink-0">
-            <h2>MENU / RECIPES.</h2>
-            <h3>BRUNCH</h3>
-            <ul>
-              <li>Frittata</li>
-              <li>French Toast Casserole</li>
-              <li>Egg Muffins</li>
-              <li>Burrito</li>
-              <li>Kedgeree</li>
-              <li>Green Shakshuka</li>
+          <div class="flex flex-col grow relative bg-yellow-500 w-auto md:w-72 h-auto md:h-96 px-8 m-8  ">
+            <h2 class="font-bold flex align-middle justify-center pt-3">MENU / RECIPES</h2>
+            <ul class="list-inside list-disc m-2 space-y-4">
+              <li><a href="./recipe.html">Autumn Squash Soup</a></li>
+              <li><a href="./recipe.html">Butter Chicken</a></li>
+              <li><a href="./recipe.html">Chicken Katsu Curry</a></li>
+              <li><a href="./recipe.html">Copycat Panera Autumn Squash Soup</a></li>
+              <li><a href="./recipe.html">Kedgeree</a></li>
             </ul>
-            <h3>LUNCH</h3>
-            <ul>
-              <li>Coconut Lime Shrimp</li>
-              <li>Copycat Panera Frontega, Chicken Panini</li>
-              <li>Copycat Wendy's Chili</li>
-              <li>Chinese Chicken Mandarin Salad</li>
-              <li>Crunchwrap supreme</li>
-              <li>Panera Thai Chicken Salad</li>
-            </ul>
-          </div>
         </aside>
         <div>
           recipe images
-          <div class="flex flex-wrap grow w-80 md:grow-0">
-            <img
+          <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-2 bg-stone-100 m-8">
+            
+            <img class="object-contain h-3/4 w-max"
+              src="https://niksharmacooks.com/wp-content/uploads/2022/11/ButterChickenDSC_5608-768x1152.jpg"
+              alt="butter-chicken"
+            />
+            <img class="object-contain h-3/4 w-max"
+              src="https://www.thelastfoodblog.com/wp-content/uploads/2021/05/tofu-katsu-curry-2.jpg"
+              alt="chicken-katsu-curry"
+            />
+            <img class="object-contain h-3/4 w-max"
+              src="https://cdn.loveandlemons.com/wp-content/uploads/2019/05/breakfast-burritos-1-830x1024.jpg"
+              alt="burritos"
+            />
+            <img class="object-contain h-3/4 w-max"
+              src="https://cdn.loveandlemons.com/wp-content/uploads/2017/01/shakshuka.jpg"
+              alt="shakshuka"
+            />
+            
+            <img class="object-contain h-3/4 w-max"
+              src="https://asimplepalate.com/wp-content/uploads/2016/10/copycat-panera-autumn-squash-soup-1-1365x2048.jpg"
+              alt="autumn-squash-soup"
+            />
+            <img class="object-contain h-3/4 w-max"
               src="https://www.loveandlemons.com/wp-content/uploads/2019/04/frittata.jpg"
               alt="frittata"
-              width="300"
-              height="300"
-            />
-            <img
-              src="https://cdn.loveandlemons.com/wp-content/uploads/2022/12/french-toast-casserole-1.jpg"
-              alt="french-toast-casserole-1"
-              width="300"
-              height="300"
-            />
-            <img
-              src="https://cdn.loveandlemons.com/wp-content/uploads/2023/01/egg-muffins-1.jpg"
-              alt="egg-muffins-1"
-              width="300"
-              height="300"
-            />
-            <img
-              src="https://cdn.loveandlemons.com/wp-content/uploads/2019/05/breakfast-burritos-1-830x1024.jpg"
-              alt="Burrito"
-              width="300"
-              height="300"
             />
           </div>
         </div>
